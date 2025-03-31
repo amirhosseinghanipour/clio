@@ -9,4 +9,12 @@ name = "clio_core"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = "0.24.0"
+tch = "0.14.0"
+rayon = "1.8.0"
+rand = "0.8.5"
+thiserror = "1.0"
+pyo3 = { version = "0.21.0", features = ["extension-module"] }
+libc = "0.2"
+
+[build-dependencies]
+cmake = "0.1"
